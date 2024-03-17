@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+
+    <style>
+      .top {
+        --offset: 50px;
+
+        position: sticky;
+        bottom: 0px;
+        place-self: end;
+        margin-top: calc(100vh + var(--offset));
+
+        /* visual styling */
+        text-decoration: none;
+        padding: 10px;
+        font-family: sans-serif;
+        color: #fff;
+        background: #000000;
+        border-style: solid;
+        border-radius: 100px;
+        white-space: nowrap;
+      }
+    </style>
+
+    <!-- font Awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="blog.css" />
+
+    <!-- JQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation start -->
+    <nav>
+      <img src="img/logo.svg" class="logo" alt="" />
+
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="home.html">Home</a></li>
+
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="courses.html">Notes</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <img src="img/menu.png" id="menu-btn" alt="" />
+      </div>
+    </nav>
+    <!-- Navigation ends -->
+
+    <!-- Hero section starts from here -->
+    <section id="about-home">
+      <h2 style="font-size: 60px">Blogs</h2>
+    </section>
+    <!-- Hero section ends from here -->
+
+    <!-- Blog container starts from here -->
+    <section id="blog-container">
+      <div class="blogs">
+        <div class="post">
+          <img src="img/b1.jpg" alt="" />
+          <h3>Learn Web Development in the easiest way</h3>
+          <p>
+            To embark on a journey in web development, start by mastering the
+            fundamental building blocks. Acquire proficiency in HTML for
+            structuring content, CSS for styling, and JavaScript for adding
+            interactivity to your web pages. Apply your newfound knowledge by
+            engaging in hands-on projects, such as creating a personal portfolio
+            or static webpage. Familiarize yourself with Git for version
+            control, enabling you to track changes in your code efficiently. As
+            you progress, delve into responsive design principles to ensure your
+            websites adapt seamlessly to various devices and screen sizes.
+            Explore frontend frameworks like React, Vue.js, or Angular to
+            simplify the development of dynamic user interfaces. Extend your
+            skills to the backend by learning a language such as Node.js,
+            Python, Ruby, or PHP, and understand the basics of databases,
+            including both SQL and NoSQL. Comprehend how to make API requests
+            and work with HTTP for effective frontend-backend communication.
+            Prioritize web security best practices to safeguard your
+            applications from common vulnerabilities. Construct full-stack
+            projects that integrate both frontend and backend components,
+            showcasing your ability to create comprehensive web applications.
+            Embrace a testing mindset to ensure the reliability and
+            functionality of your code. Stay informed about the latest
+            developments in web development, foster continuous learning, and
+            actively participate in the developer community. Assemble a
+            portfolio highlighting your projects, join open-source initiatives
+            to gain collaborative experience, and maintain an innate curiosity
+            to navigate the ever-evolving landscape of web development.
+          </p>
+          <a href="post.html">Read More</a>
+        </div>
+
+        <div class="post">
+          <img src="img/b2.jpg" alt="" />
+          <h3>Learn coding in the easiest way</h3>
+          <p>
+            Learning coding can be approached in various ways, but one effective
+            method is to start with the basics and gradually build your skills.
+            Begin with a beginner-friendly programming language such as Python,
+            which is known for its readability and simplicity. There are plenty
+            of online resources, tutorials, and interactive platforms that offer
+            hands-on coding exercises.
+          </p>
+          <a href="post.html">Read More</a>
+        </div>
+
+        <div class="post">
+          <img src="img/b3.jpg" alt="" />
+          <h3>Learn backend in the easiest way</h3>
+          <p>
+            Learning backend development involves understanding the server-side
+            of web applications, where data is processed, stored, and managed.
+            To start with the basics, grasp key concepts like databases,
+            servers, and server-side scripting languages. Begin with a language
+            like Node.js or Python, as they offer simplicity for beginners.
+            Explore frameworks like Express.js (for Node.js) or Django/Flask
+            (for Python) to streamline development. Gain proficiency in handling
+            databases using technologies like MySQL or MongoDB. Learn about APIs
+            (Application Programming Interfaces) for communication between
+            different components. Dive into authentication, authorization, and
+            security practices to protect your applications. Utilize version
+            control systems like Git to manage your code efficiently. As you
+            progress, delve into more advanced topics like RESTful APIs,
+            GraphQL, and deployment strategies. Practice by working on
+            real-world projects and collaborating with others. Online tutorials,
+            documentation, and coding communities can provide invaluable support
+            throughout your backend development journey. Remember, consistent
+            practice and hands-on experience are key to mastering backend
+            development.
+          </p>
+          <a href="post.html">Read More</a>
+        </div>
+      </div>
+      <div class="cate">
+        <h2>Categories</h2>
+        <hr />
+        <a href="#">Web Development</a>
+        <hr />
+        <a href="#">Web Design</a>
+        <hr />
+        <a href="#">App Development</a>
+        <hr />
+        <a href="#">Frontend Web</a>
+        <hr />
+        <a href="#">Python Programming</a>
+        <hr />
+        <a href="#">Javascript hacks</a>
+      </div>
+    </section>
+    <!-- Blog container ends from here -->
+
+    <!-- Footer section starts from here -->
+    <footer>
+      <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Website</li>
+        <li>chat space</li>
+        <li>notes</li>
+        <li>blogs</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Power Tools</h3>
+        <li>Chatting</li>
+        <li>About us</li>
+        <li>Top Products</li>
+        <li>Contact us</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Guides</h3>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Managed Website</li>
+        <li>Blogs</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>You can trust us.</p>
+
+        <div class="subscribe">
+          <input type="email" placeholder="Your email Address" />
+          <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="pro-links">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <a href="#" class="top">Back to Top &#8593;</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section ends from here -->
+
+    <script>
+      // Show menu links on burger click
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      // Hide navbar on click function
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .top {
+        --offset: 50px;
+
+        position: sticky;
+        bottom: 0px;
+        place-self: end;
+        margin-top: calc(100vh + var(--offset));
+
+        /* visual styling */
+        text-decoration: none;
+        padding: 10px;
+        font-family: sans-serif;
+        color: #fff;
+        background: #000000;
+        border-style: solid;
+        border-radius: 100px;
+        white-space: nowrap;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>NOTES</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- font Awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+
+    <!-- JQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation start -->
+    <nav>
+      <img src="img/logo.png" class="logo" alt="" />
+
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="home.html">Home</a></li>
+
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="courses.html" class="active">Notes</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <img src="img/menu.png" id="menu-btn" alt="" />
+      </div>
+    </nav>
+    <!-- Navigation ends -->
+
+    <div class="container">
+      <div>
+        <br />
+        <h1 class="text-center">NOTES</h1>
+        <h1 class="text-center" style="font-size: 60px">NOTES</h1>
+        <p class="text-center" style="font-size: 15px">
+          <b
+            >Always Upload Notes with Appropriate Naming ,For Easy Other
+            Birds</b
+          >
+        </p>
+      </div>
+
+      <hr />
+      <hr />
+
+      <h3><b>UPLOAD NOTES</b></h3>
+      <div class="form-group" style="color: aquamarine">
+        <input
+          type="file"
+          multiple
+          class="form-control"
+          id="fileInput"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <button
+          onclick="uploadFile('nest000')"
+          class="btn btn btn-danger btn-block"
+        >
+          UPLOAD
+        </button>
+      </div>
+      <div>
+        <h3><b> DOWNLOAD NOTES</b></h3>
+        <input type="text" id="searchInput" placeholder="Enter file name" />
+        <button id="searchButton">Search</button>
+        <ul id="pdfList"></ul>
+      </div>
+
+      <table id="fileTable" class="table table-striped">
+        <thead>
+          <tr>
+            <th>NAME</th>
+            <th>SIZE</th>
+            <th>DOWNLOAD</th>
+            <th>DELETE</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- Footer section starts from here -->
+    <footer>
+      <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Website</li>
+        <li>chat space</li>
+        <li>notes</li>
+        <li>blogs</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Power Tools</h3>
+        <li>Chatting</li>
+        <li>About us</li>
+        <li>Top Products</li>
+        <li>Contact us</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Guides</h3>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Managed Website</li>
+        <li>Blogs</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>You can trust us. we only send promo offers.</p>
+
+        <div class="subscribe">
+          <input type="email" placeholder="Your email Address" />
+          <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="pro-links">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i><br /><br />
+          <!-- scroll back to top -->
+          <a href="#" class="top">Back to Top &#8593;</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section ends from here -->
+
+    <script>
+      // Show menu links on burger click
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      // Hide navbar on click function
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.932.0.min.js"></script>
+  <script src="aws.js"></script>
+</html>
