@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single post</title>
+
+    <style>
+      .top {
+        --offset: 50px;
+
+        position: sticky;
+        bottom: 0px;
+        place-self: end;
+        margin-top: calc(100vh + var(--offset));
+
+        /* visual styling */
+        text-decoration: none;
+        padding: 10px;
+        font-family: sans-serif;
+        color: #fff;
+        background: #000000;
+        border-style: solid;
+        border-radius: 100px;
+        white-space: nowrap;
+      }
+    </style>
+
+    <!-- font Awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="/static/about.css" />
+    <link rel="stylesheet" href="/static/blog.css" />
+    <link rel="stylesheet" href="/static/post.css" />
+
+    <!-- JQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation start -->
+    <nav>
+      <img src="/static/img/logo.svg" class="logo" alt="" />
+
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="home.html">Home</a></li>
+          
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <img src="/static/img/menu.png" id="menu-btn" alt="" />
+      </div>
+    </nav>
+    <!-- Navigation ends -->
+
+    <!-- Post body starts from here -->
+    <div id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="/static/img/b1.jpg" alt="" />
+          <h3>Learning web developement In the Easiest way</h3>
+          <p>
+To embark on the journey of web development, start by grasping the fundamentals. Begin with HTML, the backbone of web structure, and then move on to CSS for styling. These foundational skills lay the groundwork for your coding journey. Practice regularly to build confidence and familiarity with coding. Next, delve into JavaScript, a dynamic scripting language that introduces interactivity to your web pages. Interactive platforms like Codecademy or freeCodeCamp can aid in your understanding. As you progress, explore responsive design techniques to ensure your websites adapt seamlessly to various devices. Familiarize yourself with Git for version control, a crucial skill for managing and tracking code changes. Consider learning a frontend framework such as React or Vue.js to streamline the development of dynamic user interfaces. Move on to backend development by understanding server-side scripting languages like Node.js or Python. Grasp the basics of databases, including SQL or NoSQL, to store and retrieve data efficiently. Apply your knowledge by building real projects, honing your skills and creating a robust portfolio. Stay current with evolving technologies and best practices, and actively engage in web development communities for support and networking. Online platforms like Udemy and Coursera offer comprehensive courses catering to different skill levels, making the learning process both accessible and enjoyable.
+          </p>
+
+          <p>
+            HTML (HyperText Markup Language):<br>
+
+Learn the basics of HTML, which is the backbone of web development.<br>
+Understand tags, elements, and document structure.<br>
+CSS (Cascading Style Sheets):<br>
+
+Dive into CSS to style your HTML pages.<br>
+Learn about selectors, properties, and how to create layouts.<br>
+JavaScript:<br>
+
+Start with the fundamentals of JavaScript, the language that makes your website interactive.<br>
+Learn about variables, data types, functions, and control structures.<br>
+Responsive Design:<br>
+
+Understand how to make your websites look good on various devices using responsive design techniques.<br>
+Learn about media queries and flexible grid layouts.<br>
+Version Control (Git):<br>
+
+Familiarize yourself with Git to track changes in your code and collaborate with others.<br>
+Basic Command Line Usage:<br>
+
+Learn basic command line commands. This is useful for tasks like navigating through files and directories.<br>
+Text Editors:<br>
+
+Choose a text editor (e.g., Visual Studio Code, Sublime Text) and learn its basic features.<br>
+Basic Terminal/Command Line Usage:<br>
+
+Understand how to use the command line or terminal for tasks like navigating your file system and running scripts.<br>
+Web Browsers and Developer Tools:<br>
+
+Get familiar with web browsers and their developer tools for debugging and inspecting web pages.<br>
+Basic Understanding of how the Internet Works:<br>
+
+Learn the basics of how the internet functions, including HTTP/HTTPS, DNS, and web servers.<br>
+Frameworks and Libraries (Optional):<br>
+
+Explore popular front-end frameworks like React, Angular, or Vue.js.<br>
+Consider learning a back-end language like Node.js, Python, Ruby, or PHP.<br>
+Databases (Optional):<br>
+
+Learn the basics of databases, especially if you are interested in back-end development.<br>
+Understand concepts like SQL and databases such as MySQL or MongoDB.<br>
+Build Tools (Optional):<br>
+
+Explore build tools like Webpack or Gulp to automate tasks and streamline your workflow.<br>
+Deploying Your Website:<br>
+
+Learn how to deploy your website to a hosting provider. Platforms like Netlify, Vercel, or GitHub Pages make this process easy.<br>
+Continuous Learning:<br>
+
+Stay updated with industry trends and new technologies.<br>
+Engage with the developer community through forums, blogs, and social media.<br>
+          </p>
+
+          
+          
+
+          <br />
+
+          <a href="#">Read Next</a>
+        </div>
+      </div>
+    </div>
+    <!-- Post body ends from here -->
+
+    <!-- Footer section starts from here -->
+        <footer>
+        <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Website</li>
+        <li>chat space</li>
+        <li>notes</li>
+        <li>blogs</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Power Tools</h3>
+        <li>Chatting</li>
+        <li>About us</li>
+        <li>Top Products</li>
+        <li>Contact us</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Guides</h3>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Managed Website</li>
+        <li>Blogs</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>You can trust us.</p>
+
+        <div class="subscribe">
+          <input type="email" placeholder="Your email Address" />
+          <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="pro-links">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <a href="#" class="top">Back to Top &#8593;</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section ends from here -->
+
+    <script>
+      // Show menu links on burger click
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      // Hide navbar on click function
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>
