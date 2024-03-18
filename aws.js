@@ -1,6 +1,6 @@
-var region = "ap-south-1";
-var accessKeyId = "AKIAWEIHDT6GZ74AJH5Z";
-var secretAccessKey = "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";
+var region = "";
+var accessKeyId = "";
+var secretAccessKey = "";
 
 
 AWS.config.update({
