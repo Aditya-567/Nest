@@ -107,7 +107,7 @@ document.getElementById("searchButton").addEventListener("click", function () {
 
     if (searchQuery === "") {
         // If the search input is empty, refresh the file list to display all files
-        refreshFileList("nest000");
+        refreshFileList("");
         return;
     }
 
@@ -124,4 +124,4 @@ document.getElementById("searchButton").addEventListener("click", function () {
 });
 
 // Initial file list display
-refreshFileList("nest000");
+refreshFileList("");
