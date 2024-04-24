@@ -94,29 +94,16 @@
               />
             </div>
             <div class="form-group">
-              <button
-                onclick="uploadFile('uploadFile')"
-                class="btn btn-danger btn-block"
-                style="height: 35px"
-              >
+              <button id="uploadButton" class="btn btn-danger btn-block">
                 Upload Files
               </button>
             </div>
-            <div>
-              <h2>UPLOADED NOTES</h2>
-              <input
-                type="text"
-                id="searchInput"
-                placeholder="Search for PDFs"
-              />
-              <ul id="pdfList"></ul>
-            </div>
-
+            <div id="responseMessage"></div>
+            <h2>Manage Uploaded Files</h2>
             <table id="fileTable" class="table table-striped">
               <thead>
                 <tr>
                   <th>NAME</th>
-                  <th>SIZE</th>
                   <th>DOWNLOAD</th>
                   <th>DELETE</th>
                 </tr>
@@ -188,7 +175,6 @@
       });
     </script>
   </body>
-
-  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.932.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="aws.js"></script>
 </html>
