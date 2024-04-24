@@ -36,8 +36,8 @@
     />
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="/static/style.css" />
-    <link rel="stylesheet" href="/static/about.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
 
     <!-- JQuery CDN link -->
     <script
@@ -49,7 +49,7 @@
   <body>
     <!-- Navigation start -->
     <nav>
-      <img src="/static/img/logo.png" class="logo" alt="" />
+      <img src="img/logo.png" class="logo" alt="" />
 
       <div class="navigation">
         <ul>
@@ -58,68 +58,74 @@
 
           <li><a href="blog.html">Blog</a></li>
           <li><a href="courses.html" class="active">Notes</a></li>
-          <li><a href="about.html">About Us</a></li>
+
           <li><a href="contact.html">Contact</a></li>
         </ul>
 
-        <img src="/static/img/menu.png" id="menu-btn" alt="" />
+        <img src="img/menu.png" id="menu-btn" alt="" />
       </div>
     </nav>
     <!-- Navigation ends -->
 
-    <div class="container">
-      <div>
-        <br />
-        <h1 class="text-center">NOTES</h1>
-        <h1 class="text-center" style="font-size: 60px">NOTES</h1>
-        <p class="text-center" style="font-size: 15px">
-          <b
-            >Always Upload Notes with Appropriate Naming ,For Easy Other
-            Birds</b
-          >
-        </p>
-      </div>
+    <div class="container" style="padding-top: 10%; padding-bottom: 20%">
+      <div class="row">
+        <!-- Column for iframe -->
+        <div class="col-md-6">
+          <iframe
+            src="https://giphy.com/embed/3o7GUB9ExWUxjiSrKw"
+            width="100%"
+            height="360"
+            frameborder="0"
+          ></iframe>
+        </div>
 
-      <hr />
-      <hr />
+        <!-- Column for notes and upload -->
+        <div class="col-md-6">
+          <div>
+            <h1 class="text-center">NOTES</h1>
 
-      <h3><b>UPLOAD NOTES</b></h3>
-      <div class="form-group" style="color: aquamarine">
-        <input
-          type="file"
-          multiple
-          class="form-control"
-          id="fileInput"
-          required
-        />
-      </div>
+            <div class="form-group">
+              <input
+                type="file"
+                multiple
+                class="form-control"
+                id="fileInput"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <button
+                onclick="uploadFile('uploadFile')"
+                class="btn btn-danger btn-block"
+                style="height: 35px"
+              >
+                Upload Files
+              </button>
+            </div>
+            <div>
+              <h2>UPLOADED NOTES</h2>
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for PDFs"
+              />
+              <ul id="pdfList"></ul>
+            </div>
 
-      <div class="form-group">
-        <button
-          onclick="uploadFile('nest000')"
-          class="btn btn btn-danger btn-block"
-        >
-          UPLOAD
-        </button>
+            <table id="fileTable" class="table table-striped">
+              <thead>
+                <tr>
+                  <th>NAME</th>
+                  <th>SIZE</th>
+                  <th>DOWNLOAD</th>
+                  <th>DELETE</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
       </div>
-      <div>
-        <h3><b> DOWNLOAD NOTES</b></h3>
-        <input type="text" id="searchInput" placeholder="Enter file name" />
-        <button id="searchButton">Search</button>
-        <ul id="pdfList"></ul>
-      </div>
-
-      <table id="fileTable" class="table table-striped">
-        <thead>
-          <tr>
-            <th>NAME</th>
-            <th>SIZE</th>
-            <th>DOWNLOAD</th>
-            <th>DELETE</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
     </div>
 
     <!-- Footer section starts from here -->
@@ -150,7 +156,7 @@
 
       <div class="footer-col">
         <h3>Newsletter</h3>
-        <p>You can trust us. we only send promo offers.</p>
+        <p>You can trust us.</p>
 
         <div class="subscribe">
           <input type="email" placeholder="Your email Address" />
@@ -184,5 +190,5 @@
   </body>
 
   <script src="https://sdk.amazonaws.com/js/aws-sdk-2.932.0.min.js"></script>
-  <script src="/static/aws.js"></script>
+  <script src="aws.js"></script>
 </html>
